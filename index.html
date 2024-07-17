@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sib {
+        height: 60px;
+        width: 60px;
+        border: 1px solid;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        top: 100px;
+        left: 350px;
+        background-color: aqua;
+        perspective: 30px;
+      }
+      .val {
+        background-color: rgba(47, 79, 79, 0.167);
+        padding: 3px;
+        width: 200px;
+      }
+      .val:hover{
+        background-color: darkslategrey;
+      }
+      #id1:checked ~ div {
+        transform: scaleX(1.5);
+      }
+      #id2:checked ~ .sib {
+        transform: rotate(10deg);
+      }
+      #id3:checked ~ .sib {
+        transform: rotate(45deg);
+      }
+      #id4:checked ~ .sib {
+        transform: rotateX(45deg);
+      }
+      #id5:checked ~ .sib {
+        transform: rotateX(100deg);
+      }
+      #id6:checked ~ .sib {
+        transform: rotateY(45deg);
+      }
+      #id7:checked ~ .sib {
+        transform: rotateY(80deg);
+      }
+      #id8:checked ~ .sib {
+        transform: skew(20deg, 20deg);
+      }
+      #id9:checked ~ .sib {
+        transform: skew(30deg, 30deg);
+      }
+      #id10:checked ~ .sib {
+        transform: skewX(30deg);
+      }
+      #id11:checked ~ .sib {
+        transform: skewX(40deg);
+      }
+      #id12:checked ~ .sib {
+        transform: skewY(30deg);
+      }
+      #id13:checked ~ .sib {
+        transform: skewX(40deg);
+      }
+      #id14:checked ~ .sib {
+        transform: translate(20px, 10px);
+      }
+      #id15:checked ~ .sib {
+        transform: translate(20px, 20px);
+      }
+      #id16:checked ~ .sib {
+        transform: scale(2, 2);
+      }
+      #id17:checked ~ .sib {
+        transform: scale(2, 3);
+      }
+      #id1:checked ~ .val1 {
+        background-color: darkslategrey;
+      }
+      #id2:checked ~ .val2 {
+        background-color: darkslategrey;
+      }
+      #id3:checked ~ .val3 {
+        background-color: darkslategrey;
+      }
+      #id4:checked ~ .val4 {
+        background-color: darkslategrey;
+      }
+      #id5:checked ~ .val5 {
+        background-color: darkslategrey;
+      }
+      #id6:checked ~ .val6 {
+        background-color: darkslategrey;
+      }
+      #id7:checked ~ .val7 {
+        background-color: darkslategrey;
+      }
+      #id8:checked ~ .val8 {
+        background-color: darkslategrey;
+      }
+      #id9:checked ~ .val9 {
+        background-color: darkslategrey;
+      }
+      #id10:checked ~ .val10 {
+        background-color: darkslategrey;
+      }
+      #id11:checked ~ .val11 {
+        background-color: darkslategrey;
+      }
+      #id12:checked ~ .val12 {
+        background-color: darkslategrey;
+      }
+      #id13:checked ~ .val13 {
+        background-color: darkslategrey;
+      }
+      #id14:checked ~ .val14 {
+        background-color: darkslategrey;
+      }
+      #id15:checked ~ .val15 {
+        background-color: darkslategrey;
+      }
+      #id16:checked ~ .val16{
+        background-color: darkslategrey;
+      }
+      #id17:checked ~ .val17 {
+        background-color: darkslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" class="inp" id="id1" name="radio" /><input
+      class="val val1"
+      value="transform:none;"
+    /><br /><br />
+    <input type="radio" class="inp" id="id2" name="radio" /><input
+      class="val val2"
+      value="transform: rotate(10deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id3" name="radio" /><input
+      class="val val3"
+      value="transform: rotate(45deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id4" name="radio" /><input
+      class="val val4"
+      value="transform: rotateX(45deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id5" name="radio" /><input
+      class="val val5"
+      value="transform: rotateX(100deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id6" name="radio" /><input
+      class="val val6"
+      value="transform: rotateY(45deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id7" name="radio" /><input
+      class="val val7"
+      value="transform: rotateY(80deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id8" name="radio" /><input
+      class="val val8"
+      value="transform: skew(20deg,20deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id9" name="radio" /><input
+      class="val val9"
+      value="transform: skew(30deg,30deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id10" name="radio" /><input
+      class="val val10"
+      value="transform: skewX(30deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id11" name="radio" /><input
+      class="val val11"
+      value="transform: skewX(40deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id12" name="radio" /><input
+      class="val val12"
+      value="transform: skewY(30deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id13" name="radio" /><input
+      class="val val13"
+      value="transform: skewY(40deg);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id14" name="radio" /><input
+      class="val val14"
+      value="transform: translate(20px,10px);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id15" name="radio" /><input
+      class="val val15"
+      value="transform: translate(20px,20px);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id16" name="radio" /><input
+      class="val val16"
+      value="transform: scale(2,2);"
+    /><br /><br />
+    <input type="radio" class="inp" id="id17" name="radio" /><input
+      class="val val17"
+      value="transform: scale(2,3);"
+    /><br /><br />
+    <div class="sib">Lorem ipsum do</div>
+  </body>
+</html>
